@@ -1,0 +1,268 @@
+/* responsive.css */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Navbar */
+    .navbar-collapse {
+        text-align: center;
+    }
+    .navbar-nav {
+        margin-top: 10px;
+    }
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-control {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+    .btn-outline-success {
+        width: 80%;
+    }
+
+    /* Home Section */
+    .home {
+        padding-top: 20px;
+        height: auto; /* Allow height to adjust based on content */
+        min-height: 100vh; /* Ensure it still takes full viewport height if content is small */
+    }
+    .content {
+        padding: 20px;
+        text-align: center;
+    }
+    .content h3 {
+        font-size: 1.5em;
+    }
+    .content p {
+        font-size: 0.9em;
+        text-indent: 0; /* Remove indent on small screens */
+    }
+
+    /* Menu Section (index.html) */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    .menu .card {
+        width: 90% !important; /* Override inline style */
+        margin-bottom: 20px;
+    }
+
+    /* About Us Section (if present) */
+    .content2 {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .img {
+        width: 90%;
+        height: auto;
+        margin: 0 auto 20px auto; /* Center image and add space below */
+    }
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        margin: 10px auto;
+        max-width: 90%;
+    }
+    .content {
+        padding: 20px;
+        min-width: unset; /* Remove min-width */
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+    .footer .link, .footer .hours, .footer .contact, .footer .media {
+        width: 100%;
+    }
+    .media i {
+        font-size: 24px;
+        margin: 0 5px;
+    }
+
+    /* menu.html specific styles */
+    .foots, .drink2 {
+        flex-direction: column;
+        align-items: center;
+        margin: 0; /* Remove margin from foots/drink2 */
+    }
+    .menu-file .card {
+        width: 90% !important; /* Override inline style */
+        margin-bottom: 20px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Navbar */
+    .navbar-nav {
+        margin-top: 10px;
+    }
+    .d-flex {
+        justify-content: center;
+    }
+
+    /* Home Section */
+    .content {
+        padding: 30px;
+    }
+    .content h3 {
+        font-size: 1.8em;
+    }
+    .content p {
+        font-size: 1em;
+    }
+
+    /* Menu Section (index.html) */
+    .menu {
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center;
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    .menu .card {
+        width: 45% !important; /* Two cards per row */
+        margin: 10px;
+    }
+
+    /* About Us Section */
+    .content2 {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+    }
+    .img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto 20px auto;
+    }
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+    .content {
+        padding: 30px;
+        min-width: unset;
+    }
+
+    /* Footer */
+    .footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+    }
+    .footer .link, .footer .hours, .footer .contact, .footer .media {
+        width: 45%; /* Two columns */
+        text-align: center;
+    }
+    .media i {
+        font-size: 26px;
+        margin: 0 8px;
+    }
+
+    /* menu.html specific styles */
+    .foots, .drink2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    .menu-file .card {
+        width: 45% !important; /* Two cards per row */
+        margin: 10px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Home Section */
+    .content {
+        padding: 40px;
+    }
+    .content h3 {
+        font-size: 2em;
+    }
+    .content p {
+        font-size: 1.1em;
+    }
+
+    /* Menu Section (index.html) */
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0;
+        margin-top: 40px;
+    }
+    .menu .card {
+        width: 40% !important; /* Adjust as needed for better spacing */
+        margin: 15px;
+    }
+
+    /* About Us Section */
+    .content2 {
+        flex-direction: row; /* Keep as row */
+        padding-top: 80px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .img {
+        width: 300px; /* Original size */
+        height: 300px;
+        margin: 0 20px 0 0;
+    }
+    .content {
+        padding: 40px;
+        padding-top: 30px;
+        flex: 1;
+        min-width: 300px;
+    }
+
+    /* Footer */
+    .footer {
+        gap: 30px;
+        padding: 20px;
+        justify-content: center;
+    }
+    .footer .link, .footer .hours, .footer .contact, .footer .media {
+        width: auto;
+    }
+
+    /* menu.html specific styles */
+    .foots, .drink2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+    }
+    .menu-file .card {
+        width: 30% !important; /* Three cards per row */
+        margin: 15px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Menu Section (index.html) */
+    .menu {
+        padding-left: 100px; /* Adjust as needed */
+    }
+
+    /* menu.html specific styles */
+    .foots, .drink2 {
+        justify-content: flex-start; /* Align left */
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* No specific changes needed for extra large as base styles should work well */
+}
